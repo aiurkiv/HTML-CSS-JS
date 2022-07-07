@@ -1,0 +1,54 @@
+.cabBody
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: url(Imagens/CabecalhoBase.png) repeat-x;
+}
+.cabInit
+{
+    text-align: center;
+    font-family: cursive;
+    color: white;
+}
+.cabInit h1
+{
+    font-size: 20pt;
+    font-weight: bolder;
+    margin: 0 auto;
+    padding: 0;
+}
+.cabBt
+{
+    border-color: white;
+    border-radius: 5px;
+    padding: 1px 10px;
+    color: white;
+    background-color: transparent;
+}
+.quemsouBody
+{
+    display: flex;
+}
+#quemsouTela01
+{
+    width: 25%;
+}
+#quemsouTela02
+{
+    width: auto;
+}
+#quemsouIMG
+{
+    width: 100%;
+    float: left;
+    border-radius: 50%;
+}
+
+.quemsouBody p
+{
+    margin-left: 2%;
+}
+
+
+

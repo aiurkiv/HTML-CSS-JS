@@ -1,0 +1,275 @@
+.temaDark
+{
+    background-color: black;
+    color: white;
+}
+.cabecalho
+{
+    text-align: center;
+    font-family: cursive;
+}
+.container
+{
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid white;
+    display: flex; /*Este é o comando que tornará este container como flex container*/
+}
+
+.item
+{
+    background-color: blue;
+    margin: 5px;
+}
+
+.configContainer
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.configItem
+{
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.directionRow
+{
+    flex-direction: row;
+}
+
+.directionRowReverse
+{
+    flex-direction: row-reverse;
+}
+
+.directionColumn
+{
+    flex-direction: column;
+}
+
+.directionColumnReverse
+{
+    flex-direction: column-reverse;
+}
+
+.containerDirec
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.directionWrap
+{
+    flex-wrap: wrap;
+}
+
+.directionWrapReverse
+{
+    flex-wrap: wrap-reverse;
+}
+
+.containerRow /*Somente deseja o container na tela*/
+{
+    max-width: 175px;
+    padding: 0;
+    border: 2px solid white;
+    list-style: none;
+    display: flex; /*Este é o comando que tornará este container como flex container*/
+}
+
+.containerColumn /*Somente deseja o container na tela*/
+{
+    max-height: 175px;
+    width: 100px;
+    padding: 0;
+    border: 2px solid white;
+    list-style: none;
+    display: flex; /*Este é o comando que tornará este container como flex container*/
+}
+
+.itemWrap
+{
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.backgroundBlue
+{
+    background-color: blue;
+}
+.backgroundGreen
+{
+    background-color: green;
+}
+.backgroundOrange
+{
+    background-color: orange;
+}
+.backgroundBrown
+{
+    background-color: brown;
+}
+.backgroundViolet
+{
+    background-color: violet;
+}
+
+.flex-start
+{
+    justify-content: flex-start;
+}
+.flex-end
+{
+    justify-content: flex-end;
+}
+.center
+{
+    justify-content: center;
+}
+.space-between
+{
+    justify-content: space-between;
+}
+.space-around
+{
+    justify-content: space-around;
+}
+
+.alignItemsCenter
+{
+    align-items: center; /*É colocado no container, porém ele alinha o conteúdo do item no centro do item.*/
+}
+
+.flex
+{
+    flex: 1; /*Cuida da distribuição do tamanho dos itens.*/
+}
+.alignItemsStretch
+{
+    align-items: stretch; /*É colocado no container, Faz com que os itens cresçam de acordo com o item de maior conteúdo.*/
+}
+.alignItemsFlexStart
+{
+    align-items: flex-start; /*É colocado no container, Faz com que os itens sejam alinhados no topo*/
+}
+.alignItemsFlexEnd
+{
+    align-items: flex-end; /*É colocado no container, Faz com que os itens sejam alinhados em baixo*/
+}
+.alignItemsBaseline
+{
+    align-items: baseline; /*É colocado no container, Faz com que os itens sejam alinhados em baixo*/
+}
+.textoCentro
+{
+    text-align: center;
+}
+.containerCentral
+{
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.containerComHeight
+{
+    height: 400px;
+}
+.itemConfigGrow
+{
+    padding: 10px;
+}
+.flexGrow0
+{
+    flex-grow: 0;
+}
+.flexGrow1
+{
+    flex-grow: 1;
+}
+.flexGrow2
+{
+    flex-grow: 2;
+}
+.containerGrow
+{
+    max-width: 1200px;
+    padding: 10px;
+    border: 2px solid white;
+    display: flex; /*Este é o comando que tornará este container como flex container*/
+}
+.containerAlignContent
+{
+    height: 500px;
+    width: 400px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid white;
+}
+.itemAlignContent
+{
+    background-color: blue;
+    color: white;
+    margin: 5px;
+    padding: 0 5px;
+    flex: 1;
+    text-align: center;
+}
+.alignContentStretch
+{
+    align-content: stretch;
+}
+.alignContentFlexStart
+{
+    align-content: flex-start;
+}
+.alignContentFlexEnd
+{
+    align-content: flex-end;
+}
+.alignContentCenter
+{
+    align-content: center;
+}
+.alignContentSpaceBetween
+{
+    align-content: space-between;
+}
+.alignContentSpaceAround
+{
+    align-content: space-around;
+}
+.flexBasisAuto
+{
+    flex-basis: auto;
+}
+.flexBasis00
+{
+    flex-basis: 0;
+}
+.flexBasis01
+{
+    flex-basis: 1;
+}
+.flexBasis02
+{
+    flex-basis: 2;
+}

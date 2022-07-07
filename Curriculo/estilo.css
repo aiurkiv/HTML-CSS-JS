@@ -1,0 +1,42 @@
+body
+{
+    margin: 0;
+}
+img
+{
+    border-radius: 50%;
+    height: 250px;
+    float: right;
+}
+h2
+{
+    border-bottom: 1px solid black;
+}
+h4
+{
+    margin: 0;
+}
+#cabecalho
+{
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 10px;
+    color: white;
+    border: 0 solid black;
+    background: url(../Imagens/CabecalhoBase.png) repeat-x;
+    font-size: 20pt;
+}
+#cabecalho h1
+{
+    font-size: 40pt;
+    text-align: center;
+}
+#cabecalho a
+{
+    color: white;
+}
+.post
+{
+    padding: 10px;
+    margin: 10px;
+}

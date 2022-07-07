@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body
+{
+    max-width: 1440px;
+    width: 100%;
+}
+header
+{
+    background-color: #122a57;
+    color: white;
+    margin: 0 auto;
+    height: 20vh;
+    display: flex;
+    flex-grow: 1;
+}
+footer
+{
+    background-color: #122a57;
+    color: white;
+    margin: 0 auto;
+    height: 15vh;
+    display: flex;
+}
+.container
+{
+    width: 80vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.listaDoHeader
+{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+}
+li a
+{
+    text-decoration: none;
+    color: white;
+}
+.configParticaoTela /*Configura a partição de tela de um div com 50vw de tamanho tipo flex*/
+{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+}
+.configItemParticao /*Configura o "item" interno da partição (tamanho do texto e cor)*/
+{
+    width: 100%;
+    color: #122a57;
+    font-size: 13pt;
+    padding-left: 3vw;
+}
+.configItemParticao h3
+{
+    font-size: 30pt;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+.configItemParticao h3::before /*Desenha o retangulo antes de "Quem somos"*/
+{
+    content: "*";
+    margin-right: 1vw;
+    background-color: #122a57;
+    position: relative;
+}
+.configItemParticao p
+{
+    line-height: 2;
+}
+h2
+{
+    font-size: 40pt;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+h3
+{
+    font-size: 30pt;
+    font-weight: bold;
+    margin-bottom: 10vh;
+}
+.configImgPadrao
+{
+    display: block;
+    width: 100%;
+}
+.btTelaApresentacao
+{
+    border: none;
+    background-color: #122a57;
+    color: white;
+    border-radius: 20px;
+    margin-top: 2vw;
+    padding: 10px 30px;
+    font-size: 13pt;
+}
+.configServicos
+{
+    background-color: #122a57;
+    color: white;
+    padding: 8vh 0;
+}
+.btServicos
+{
+    border: none;
+    background-color: white;
+    color: #122a57;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 13pt;
+}
+.pConfigAux
+{
+    text-align: center;
+    margin: 3vh;
+}
+.containerDivServico
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33vw;
+}
+.configImgServicos
+{
+    display: block;
+    max-height: 100vh;
+}
+h4
+{
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+.caixaPlanos
+{
+    border: 5px solid #122a57;
+    padding: 2vw 3vw;
+    align-content: flex-end;
+    margin: 1vh 1vw;
+}
+.listaPlanos
+{
+    list-style: square;
+    justify-content: space-between;
+}
+.listaPlanos li
+{
+    line-height: 2.5;
+}
+.tituloPlanos
+{
+    text-align: center;
+    border-bottom: 3px solid #122a57;
+    margin-bottom: 2vw;
+}
+.alignItensFlexEnd
+{
+    align-items: flex-end;
+}
+.configPlanos
+{
+    background-color: white;
+    color: #122a57;
+    padding: 8vh 0;
+}

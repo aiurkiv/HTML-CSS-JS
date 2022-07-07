@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloFlexBox.css">
+    <title>FlexBox</title>
+</head>
+<body class="temaDark">
+    <header class="cabecalho">
+        <h1>FlexBox</h1>
+        <p>
+            Exemplos de aplicação de flex box.
+        </p>
+    </header>
+    <section>
+        <div>
+            <h1>Container e flexbox</h1>
+            <p>Esta primeira parte está relacionada ao controles e comandos para a flexbox ou container.</p>
+            <div>
+                <h2>Flex container</h2>
+                <p>Tenta agrupar todos os itens dentro de um container.</p>
+                <h3>Exemplos:</h3>
+                <p>Flex conteiner padrão.</p>
+                <div class="container">
+                    <div class="item">Item 01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03</div>
+                    <div class="item">Item 04</div>
+                </div>
+                <p>Flex conteiner com itens grandes.</p>
+                <div class="container">
+                    <div class="item">Item de tamanho grande</div>
+                    <div class="item">Item 01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03</div>
+                    <div class="item">Item 04</div>
+                </div>
+                <div>Aqui ele ajusta o tamanho do elemento para tentar alocar todos os itens dentro do container.</div>
+                <p>Flex conteiner com muitos itens.</p>
+                <div class="container">
+                    <div class="item">Item 01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03</div>
+                    <div class="item">Item 04</div>
+                    <div class="item">Item 05</div>
+                    <div class="item">Item 06</div>
+                    <div class="item">Item 07</div>
+                    <div class="item">Item 08</div>
+                    <div class="item">Item 09</div>
+                    <div class="item">Item 10</div>
+                </div>
+                <div>Quando a quantia de itens não é comportada dentro do container ele vaza. O tratamento para isso será visto posteriormente.</div>
+                <p>Flex conteiner com muitos itens.</p>
+                <div class="container">
+                    <div class="item">Item de tamanho muito grande e com muitos elementos</div>
+                    <div class="item">Item 01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03</div>
+                    <div class="item">Item 04</div>
+                    <div class="item">Item 05</div>
+                    <div class="item">Item 06</div>
+                    <div class="item">Item 07</div>
+                    <div class="item">Item 08</div>
+                    <div class="item">Item 09</div>
+                    <div class="item">Item 10</div>
+                </div>
+                <div>Aqui ele estica os elementos grandes vericalmente e vaza do container.</div>
+            </div>
+            <div>
+                <h2>Flex direction</h2>
+                <p>Indica a direção e sentido dos itens.</p>
+                <h3>Exemplos:</h3>
+                <p>Flex direction: row (padrão quando não declarado)</p>
+                <ul class="containerDirec configContainer directionRow">
+                    <li class="item configItem directionRow">01</li>
+                    <li class="item configItem directionRow">02</li>
+                    <li class="item configItem directionRow">03</li>
+                    <li class="item configItem directionRow">04</li>
+                    <li class="item configItem directionRow">05</li>
+                </ul>
+                <p>Flex direction: row-reverse</p>
+                <ul class="containerDirec configContainer directionRowReverse">
+                    <li class="item configItem">01</li>
+                    <li class="item configItem">02</li>
+                    <li class="item configItem">03</li>
+                    <li class="item configItem">04</li>
+                    <li class="item configItem">05</li>
+                </ul>
+                <p>Flex direction: column</p>
+                <ul class="containerDirec configContainer directionColumn">
+                    <li class="item configItem">01</li>
+                    <li class="item configItem">02</li>
+                    <li class="item configItem">03</li>
+                    <li class="item configItem">04</li>
+                    <li class="item configItem">05</li>
+                </ul>
+                <p>Flex direction: column-reverse</p>
+                <ul class="containerDirec configContainer directionColumnReverse">
+                    <li class="item configItem">01</li>
+                    <li class="item configItem">02</li>
+                    <li class="item configItem">03</li>
+                    <li class="item configItem">04</li>
+                    <li class="item configItem">05</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Flex Wrap</h2>
+                <p>
+                    Este comando faz com que ocorra queda de linha quando os itens ultrapassam o tamanho do container.<br>
+                    Por padrão o valor é "nowrap", então abaixo estarão exemplos das outras funcionalidades.
+                </p>
+                <h3>Exemplos:</h3>
+                <p>Flex direction: row; Flex-wrap: wrap.</p>
+                <ul class="containerRow directionRow directionWrap">
+                    <li class="itemWrap backgroundBlue">01</li>
+                    <li class="itemWrap backgroundOrange">02</li>
+                    <li class="itemWrap backgroundGreen">03</li>
+                    <li class="itemWrap backgroundBrown">04</li>
+                    <li class="itemWrap backgroundViolet">05</li>
+                </ul>
+                <p>Flex direction: row; Flex-wrap: wrap-reverse.</p>
+                <ul class="containerRow directionRow directionWrapReverse">
+                    <li class="itemWrap backgroundBlue">01</li>
+                    <li class="itemWrap backgroundOrange">02</li>
+                    <li class="itemWrap backgroundGreen">03</li>
+                    <li class="itemWrap backgroundBrown">04</li>
+                    <li class="itemWrap backgroundViolet">05</li>
+                </ul>
+                <p>Flex direction: row-reverse; Flex-wrap: wrap.</p>
+                <ul class="containerRow directionRowReverse directionWrap">
+                    <li class="itemWrap backgroundBlue">01</li>
+                    <li class="itemWrap backgroundOrange">02</li>
+                    <li class="itemWrap backgroundGreen">03</li>
+                    <li class="itemWrap backgroundBrown">04</li>
+                    <li class="itemWrap backgroundViolet">05</li>
+                </ul>
+                <p>Flex direction: row-reverse; Flex-wrap: wrap-reverse.</p>
+                <ul class="containerRow directionRowReverse directionWrapReverse">
+                    <li class="itemWrap backgroundBlue">01</li>
+                    <li class="itemWrap backgroundOrange">02</li>
+                    <li class="itemWrap backgroundGreen">03</li>
+                    <li class="itemWrap backgroundBrown">04</li>
+                    <li class="itemWrap backgroundViolet">05</li>
+                </ul>
+
+                <p>Flex direction: column; Flex-wrap: wrap.</p>
+                <ul class="containerColumn directionColumn directionWrap">
+                    <li class="itemWrap backgroundBlue">01</li>
+                    <li class="itemWrap backgroundOrange">02</li>
+                    <li class="itemWrap backgroundGreen">03</li>
+                    <li class="itemWrap backgroundBrown">04</li>
+                    <li class="itemWrap backgroundViolet">05</li>
+                </ul>
+                <p>Flex direction: column; Flex-wrap: wrap-reverse.</p>
+                <ul class="containerColumn directionColumn directionWrapReverse">
+                    <li class="itemWrap backgroundBlue">01</li>
+                    <li class="itemWrap backgroundOrange">02</li>
+                    <li class="itemWrap backgroundGreen">03</li>
+                    <li class="itemWrap backgroundBrown">04</li>
+                    <li class="itemWrap backgroundViolet">05</li>
+                </ul>
+                <p>Flex direction: column-reverse; Flex-wrap: wrap.</p>
+                <ul class="containerColumn directionColumnReverse directionWrap">
+                    <li class="itemWrap backgroundBlue">01</li>
+                    <li class="itemWrap backgroundOrange">02</li>
+                    <li class="itemWrap backgroundGreen">03</li>
+                    <li class="itemWrap backgroundBrown">04</li>
+                    <li class="itemWrap backgroundViolet">05</li>
+                </ul>
+                <p>Flex direction: column-reverse; Flex-wrap: wrap-reverse.</p>
+                <ul class="containerColumn directionColumnReverse directionWrapReverse">
+                    <li class="itemWrap backgroundBlue">01</li>
+                    <li class="itemWrap backgroundOrange">02</li>
+                    <li class="itemWrap backgroundGreen">03</li>
+                    <li class="itemWrap backgroundBrown">04</li>
+                    <li class="itemWrap backgroundViolet">05</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Flex justify content</h2>
+                <p>Comando para posicionamento de itens dentro do container.</p>
+                <h3>Exemplos:</h3>
+                <p>Flex start.</p>
+                <div class="container flex-start">
+                    <div class="item">01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03 grande</div>
+                </div>
+                <p>Flex end.</p>
+                <div class="container flex-end">
+                    <div class="item">01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03 grande</div>
+                </div>
+                <p>Center.</p>
+                <div class="container center">
+                    <div class="item">01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03 grande</div>
+                </div>
+                <p>Space between.</p>
+                <div class="container space-between">
+                    <div class="item">01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03 grande</div>
+                </div>
+                <p>Space around.</p>
+                <div class="container space-around">
+                    <div class="item">01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03 grande</div>
+                </div>
+            </div>
+            <div>
+                <h2>Flex align</h2>
+                <p>
+                    Comando para alinhamento dos itens no container, tanto vertical quanto orizontal<BR>
+                    Por padrão inicial com ROW, porém é possível column. Ao final farei com colunas.
+                </p>
+                <h3>Exemplos:</h3>
+                <p>Sem align-items: center;</p>
+                <div class="container">
+                    <div class="item flex">01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 grande</div>
+                </div>
+                <p>Com align-items: center;</p>
+                <div class="container alignItemsCenter">
+                    <div class="item flex">01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 grande</div>
+                </div>
+                <div>align-items: center - Alinhou itens na vertical no centro do maior item.</div>
+                <p>
+                    Align-items: stretch;<br>
+                    Faz com que os itens cresçam de acordo com o item de maior conteúdo.
+                </p>
+                <div class="container alignItemsStretch">
+                    <div class="item flex">01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 grande</div>
+                </div>
+                <p>
+                    Align-items: flex-start;<br>
+                    Faz com que os itens sejam alinhados no topo.
+                </p>
+                <div class="container alignItemsFlexStart">
+                    <div class="item flex">01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 grande</div>
+                </div>
+                <p>
+                    Align-items: flex-end;<br>
+                    Faz com que os itens sejam alinhados em baixo.
+                </p>
+                <div class="container alignItemsFlexEnd">
+                    <div class="item flex">01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 grande</div>
+                </div>
+                <p>
+                    Align-items: baseline;<br>
+                    Faz com que os itens fiquem do tamanho da linha base (lembra muito flex start).<br>
+                    A linha base é a linha "abaixo" do item.
+                </p>
+                <div class="container alignItemsBaseline">
+                    <div class="item flex"><br>01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 muito grande mesmo.</div>
+                </div>
+                <h2>Column</h2>
+                <h3>Exemplos:</h3>
+                <p>Sem align-items: center;</p>
+                <div class="container directionColumn">
+                    <div class="item flex">01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 grande</div>
+                </div>
+                <p>Com align-items: center;</p>
+                <div class="container alignItemsCenter directionColumn">
+                    <div class="item flex">01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 grande</div>
+                </div>
+                <div>align-items: center - Alinhou itens na vertical no centro do maior item.</div>
+                <p>
+                    Align-items: stretch;<br>
+                    Faz com que os itens cresçam de acordo com o item de maior conteúdo.
+                </p>
+                <div class="container alignItemsStretch directionColumn">
+                    <div class="item flex">01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 grande</div>
+                </div>
+                <p>
+                    Align-items: flex-start;<br>
+                    Faz com que os itens sejam alinhados no topo.
+                </p>
+                <div class="container alignItemsFlexStart directionColumn">
+                    <div class="item flex">01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 grande</div>
+                </div>
+                <p>
+                    Align-items: flex-end;<br>
+                    Faz com que os itens sejam alinhados em baixo.
+                </p>
+                <div class="container alignItemsFlexEnd directionColumn">
+                    <div class="item flex">01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 grande</div>
+                </div>
+                <p>
+                    Align-items: baseline;<br>
+                    Faz com que os itens fiquem do tamanho da linha base (lembra muito flex start).<br>
+                    A linha base é a linha "abaixo" do item.
+                </p>
+                <div class="container alignItemsBaseline directionColumn">
+                    <div class="item flex"><br>01</div>
+                    <div class="item flex">Item 02</div>
+                    <div class="item flex">Item 03 muito grande mesmo.</div>
+                </div>
+                <h2>Centralizar item na tela.</h2>
+                <h3>Exemplo 01:</h3>
+                <p>Com apenas 1 item:</p>
+                <div class="containerCentral">
+                    <div class="item configItem">Txt</div>
+                </div>
+                <p>Com 03 itens:</p>
+                <div class="containerCentral">
+                    <div class="item configItem">Txt01</div>
+                    <div class="item configItem">Txt02</div>
+                    <div class="item configItem">Txt03</div>
+                </div>
+                <p>Com varios itens:</p>
+                <div class="containerCentral">
+                    <div class="item configItem">Txt01</div>
+                    <div class="item configItem">Txt02</div>
+                    <div class="item configItem">Txt03</div>
+                    <div class="item configItem">Txt01</div>
+                    <div class="item configItem">Txt02</div>
+                    <div class="item configItem">Txt03</div>
+                    <div class="item configItem">Txt01</div>
+                    <div class="item configItem">Txt02</div>
+                    <div class="item configItem">Txt03</div>
+                </div>
+                <p>Com varios itens e WRAP:</p>
+                <div class="containerCentral directionWrap">
+                    <div class="item configItem">Txt01</div>
+                    <div class="item configItem">Txt02</div>
+                    <div class="item configItem">Txt03</div>
+                    <div class="item configItem">Txt01</div>
+                    <div class="item configItem">Txt02</div>
+                    <div class="item configItem">Txt03</div>
+                    <div class="item configItem">Txt01</div>
+                    <div class="item configItem">Txt02</div>
+                    <div class="item configItem">Txt03</div>
+                </div>
+            </div>
+            <div>
+            <h2>Align content</h2>
+            <P>
+                Alinha todo o conteudo do container, ou seja, alinha os itens.<br>
+                Deve ser utilizado com container, display flex e wrap.
+            </P>
+            <h3>Exemplos:</h3>
+            <p>Align-content: stretch (é o comportamento padrão quando não declarado)</p>
+            <div class="containerAlignContent alignContentStretch">
+                <div class="itemAlignContent">Texto 01</div>
+                <div class="itemAlignContent">Texto 02 com algo a mais</div>
+                <div class="itemAlignContent">Texto 03 com texto</div>
+                <div class="itemAlignContent">Texto 04 este texto tem de ser muito maior que os outros devido aos textes que farei.</div>
+                <div class="itemAlignContent">Texto 05 devo escrever algo aqui.</div>
+                <div class="itemAlignContent">Texto 06 aqui também</div>
+                <div class="itemAlignContent">Texto 07 aqui algo não muito extenso, mas de relevância</div>
+            </div>
+            <p>Align-content: flex-start</p>
+            <div class="containerAlignContent alignContentFlexStart">
+                <div class="itemAlignContent">Texto 01</div>
+                <div class="itemAlignContent">Texto 02 com algo a mais</div>
+                <div class="itemAlignContent">Texto 03 com texto</div>
+                <div class="itemAlignContent">Texto 04 este texto tem de ser muito maior que os outros devido aos textes que farei.</div>
+                <div class="itemAlignContent">Texto 05 devo escrever algo aqui.</div>
+                <div class="itemAlignContent">Texto 06 aqui também</div>
+                <div class="itemAlignContent">Texto 07 aqui algo não muito extenso, mas de relevância</div>
+            </div>
+            <p>Align-content: flex-end</p>
+            <div class="containerAlignContent alignContentFlexEnd">
+                <div class="itemAlignContent">Texto 01</div>
+                <div class="itemAlignContent">Texto 02 com algo a mais</div>
+                <div class="itemAlignContent">Texto 03 com texto</div>
+                <div class="itemAlignContent">Texto 04 este texto tem de ser muito maior que os outros devido aos textes que farei.</div>
+                <div class="itemAlignContent">Texto 05 devo escrever algo aqui.</div>
+                <div class="itemAlignContent">Texto 06 aqui também</div>
+                <div class="itemAlignContent">Texto 07 aqui algo não muito extenso, mas de relevância</div>
+            </div>
+            <p>Align-content: center</p>
+            <div class="containerAlignContent alignContentCenter">
+                <div class="itemAlignContent">Texto 01</div>
+                <div class="itemAlignContent">Texto 02 com algo a mais</div>
+                <div class="itemAlignContent">Texto 03 com texto</div>
+                <div class="itemAlignContent">Texto 04 este texto tem de ser muito maior que os outros devido aos textes que farei.</div>
+                <div class="itemAlignContent">Texto 05 devo escrever algo aqui.</div>
+                <div class="itemAlignContent">Texto 06 aqui também</div>
+                <div class="itemAlignContent">Texto 07 aqui algo não muito extenso, mas de relevância</div>
+            </div>
+            <p>Align-content: space-between</p>
+            <div class="containerAlignContent alignContentSpaceBetween">
+                <div class="itemAlignContent">Texto 01</div>
+                <div class="itemAlignContent">Texto 02 com algo a mais</div>
+                <div class="itemAlignContent">Texto 03 com texto</div>
+                <div class="itemAlignContent">Texto 04 este texto tem de ser muito maior que os outros devido aos textes que farei.</div>
+                <div class="itemAlignContent">Texto 05 devo escrever algo aqui.</div>
+                <div class="itemAlignContent">Texto 06 aqui também</div>
+                <div class="itemAlignContent">Texto 07 aqui algo não muito extenso, mas de relevância</div>
+            </div>
+            <p>Align-content: space-around</p>
+            <div class="containerAlignContent alignContentSpaceAround">
+                <div class="itemAlignContent">Texto 01</div>
+                <div class="itemAlignContent">Texto 02 com algo a mais</div>
+                <div class="itemAlignContent">Texto 03 com texto</div>
+                <div class="itemAlignContent">Texto 04 este texto tem de ser muito maior que os outros devido aos textes que farei.</div>
+                <div class="itemAlignContent">Texto 05 devo escrever algo aqui.</div>
+                <div class="itemAlignContent">Texto 06 aqui também</div>
+                <div class="itemAlignContent">Texto 07 aqui algo não muito extenso, mas de relevância</div>
+            </div>
+        </div>
+        <div>
+            <h1>Flex itens</h1>
+            <p>Esta segunda parte está relacionada aos controles e comandos para formatação dos flex itens dentro do container.</p>
+            <h2>Flex grow</h2>
+            <p>
+                Lida com a proporcionalidade entre os itens dentro do container. Por padrão é 0 e não altera.<br>
+                Quando associado a algum número apartir de 1 faz a proporcionalidade.<br>
+                Ele não altera o tamanho do conteúdo do item, mas sim o "padding".
+            </p>
+            <h3>Exemplos:</h3>
+            <p>Por padrão o flex-grow tem parâmetro 0</p>
+            <div class="containerGrow">
+                <div class="item itemConfigGrow flexGrow0">A</div>
+                <div class="item itemConfigGrow flexGrow0">BBBB</div>
+                <div class="item itemConfigGrow flexGrow0">C</div>
+                <div class="item itemConfigGrow flexGrow0">DDDDDDD</div>
+            </div>
+            <p>Flex-grow parâmetro 1</p>
+            <div class="containerGrow">
+                <div class="item itemConfigGrow flexGrow1">A</div>
+                <div class="item itemConfigGrow flexGrow1">BBBB</div>
+                <div class="item itemConfigGrow flexGrow1">C</div>
+                <div class="item itemConfigGrow flexGrow1">DDDDDDD</div>
+            </div>
+            <p>Flex-grow parâmetro 2</p>
+            <div class="containerGrow">
+                <div class="item itemConfigGrow flexGrow2">A</div>
+                <div class="item itemConfigGrow flexGrow2">BBBB</div>
+                <div class="item itemConfigGrow flexGrow2">C</div>
+                <div class="item itemConfigGrow flexGrow2">DDDDDDD</div>
+            </div>
+            <p>Flex-grow misturado (0 1 2 0) </p>
+            <div class="containerGrow">
+                <div class="item itemConfigGrow flexGrow0">A</div>
+                <div class="item itemConfigGrow flexGrow1">BBBB</div>
+                <div class="item itemConfigGrow flexGrow2">C</div>
+                <div class="item itemConfigGrow flexGrow0">DDDDDDD</div>
+            </div>
+            <h2>Flex Basis</h2>
+            <p>
+                Lida com a proporcionalidade do tamanho do conteúdo do item.<br>
+                É utilizado juntamente com flex grow.<br>
+                Tentará ajustar o tamanho do conteúdo do item para que haja proporcionalidade entre o grow dos itens inseridos.
+            </p>
+            <h3>Exemplos</h3>
+            <p>Flex grow: 1, Flex basis: auto; (padrão quando não declarado)</p>
+            <div class="container">
+                <div class="item flexGrow1 textoCentro flexBasisAuto">A</div>
+                <div class="item flexGrow1 textoCentro flexBasisAuto">BB</div>
+                <div class="item flexGrow1 textoCentro flexBasisAuto">CC</div>
+                <div class="item flexGrow1 textoCentro flexBasisAuto">DDDDDDDD</div>
+            </div>
+            <p>Flex grow: 2, Flex basis: auto;</p>
+            <div class="container">
+                <div class="item flexGrow2 textoCentro flexBasisAuto">A</div>
+                <div class="item flexGrow2 textoCentro flexBasisAuto">BB</div>
+                <div class="item flexGrow2 textoCentro flexBasisAuto">CC</div>
+                <div class="item flexGrow2 textoCentro flexBasisAuto">DDDDDDDD</div>
+            </div>
+            <p>Flex grow: 0 1 2 0, Flex basis: auto;</p>
+            <div class="container">
+                <div class="item flexGrow0 textoCentro flexBasisAuto">A</div>
+                <div class="item flexGrow1 textoCentro flexBasisAuto">BB</div>
+                <div class="item flexGrow2 textoCentro flexBasisAuto">CC</div>
+                <div class="item flexGrow0 textoCentro flexBasisAuto">DDDDDDDD</div>
+            </div>
+            <div>
+                0: sem espaçamento entre item e conteúdo;<br>
+                1: com espaçamento entre item e conteúdo com peso 1;<br>
+                2: com espaçamento entre item e conteúdo com peso 2;
+            </div>
+            <p>Flex grow: 1, Flex basis: 0</p>
+            <div class="container">
+                <div class="item flexGrow1 textoCentro flexBasis00">A</div>
+                <div class="item flexGrow1 textoCentro flexBasis00">BB</div>
+                <div class="item flexGrow1 textoCentro flexBasis00">CC</div>
+                <div class="item flexGrow1 textoCentro flexBasis00">DDDDDDDD</div>
+            </div>
+            <p>Flex grow: 1, Flex basis: 1</p>
+            <div class="container">
+                <div class="item flexGrow1 textoCentro flexBasis01">A</div>
+                <div class="item flexGrow1 textoCentro flexBasis01">BB</div>
+                <div class="item flexGrow1 textoCentro flexBasis01">CC</div>
+                <div class="item flexGrow1 textoCentro flexBasis01">DDDDDDDD</div>
+            </div>
+            <p>Flex grow: 1, Flex basis: 2</p>
+            <div class="container">
+                <div class="item flexGrow1 textoCentro flexBasis02">A</div>
+                <div class="item flexGrow1 textoCentro flexBasis02">BB</div>
+                <div class="item flexGrow1 textoCentro flexBasis02">CC</div>
+                <div class="item flexGrow1 textoCentro flexBasis02">DDDDDDDD</div>
+            </div>
+            <p>Flex grow: 1, Flex basis: auto 0 1 2</p>
+            <div class="container">
+                <div class="item flexGrow1 textoCentro flexBasisauto">A</div>
+                <div class="item flexGrow1 textoCentro flexBasis00">BB</div>
+                <div class="item flexGrow1 textoCentro flexBasis01">CC</div>
+                <div class="item flexGrow1 textoCentro flexBasis02">DDDDDDDD</div>
+            </div>
+            <p>Flex grow: 1, Flex basis: 2 1 0 auto</p>
+            <div class="container">
+                <div class="item flexGrow1 textoCentro flexBasis02">A</div>
+                <div class="item flexGrow1 textoCentro flexBasis01">BB</div>
+                <div class="item flexGrow1 textoCentro flexBasis00">CC</div>
+                <div class="item flexGrow1 textoCentro flexBasisauto">DDDDDDDD</div>
+            </div>
+            <p>Flex grow: 1, Flex basis: auto 1 2 0</p>
+            <div class="container">
+                <div class="item flexGrow1 textoCentro flexBasisauto">A</div>
+                <div class="item flexGrow1 textoCentro flexBasis01">BB</div>
+                <div class="item flexGrow1 textoCentro flexBasis02">CC</div>
+                <div class="item flexGrow1 textoCentro flexBasis00">DDDDDDDD</div>
+            </div>
+            <h3>Conclusão:</h3>
+            <p>
+                Flex-Grow: ajusta o item no container. O valor informado nele é a proporcionalidade que o item terá com os demais itens.<br>
+                Flex-basis: ajusta o tamanho do conteúdo do item. Caso 0, permite que o conteúdo vá até a borda do item, caso maior define o espaço entre o conteúdo e a borda do item. Caso o conteúdo seja maior que o item ele "estica" o item e o conteúdo permanece dentro do item.
+            </p>
+        </div>
+    </section>
+</body>
+</html>
