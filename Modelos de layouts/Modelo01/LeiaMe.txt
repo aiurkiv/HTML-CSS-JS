@@ -1,0 +1,11 @@
+Modelo de site responsivo com flex box.
+
+Os itens possuem tamanho fixo de 350x300 pixels e se ajustam automaticamente
+conforme aumento ou diminuo a tela.
+Optei por deixar a margem para demarcar o item e comparar com a imagem.
+As imagens que selecionei possuem tamanhos variádos e por isso não se ajustam ao
+tamanho do flex item.
+Para ajustar a imagem dentro do item utilizei o width: 100% para que a imagem se
+ajuste ao tamanho do width do item.
+Alterei também a cor de fundo de cada item do header para poder visualizar o espaço
+e formato.
