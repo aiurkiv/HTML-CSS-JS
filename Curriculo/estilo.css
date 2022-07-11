@@ -1,42 +1,99 @@
-body
-{
-    margin: 0;
-}
-img
-{
-    border-radius: 50%;
-    height: 250px;
-    float: right;
-}
-h2
-{
-    border-bottom: 1px solid black;
-}
-h4
-{
-    margin: 0;
-}
-#cabecalho
+*
 {
     margin: 0 auto;
     padding: 0;
-    padding-top: 10px;
-    color: white;
-    border: 0 solid black;
-    background: url(../Imagens/CabecalhoBase.png) repeat-x;
-    font-size: 20pt;
+    font-size: 14px;
+    font-family: sans-serif;
 }
-#cabecalho h1
+body
 {
-    font-size: 40pt;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+}
+#cabecalho
+{
+    display: flex;
+    justify-content: space-between;
+    background: url(../Imagens/CabecalhoBase.png) repeat-x;
+}
+#cabecalho a:link
+{
+    color: white;
+}
+#cabecalho a:hover
+{
+    color: goldenrod;
+}
+#containerIMG img
+{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#containerIMG
+{
+    width: 200px;
+    min-width: 200px;
+}
+#containerCabecalho
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+#containerCabecalho h1
+{
+    background-color: transparent;
+    font-size: 3rem;
+}
+#containerCabecalho li, a
+{
+    font-size: 18px;
+    line-height: 1.5;
+}
+#corpo
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1rem;
+}
+#corpo h2
+{
+    font-size: 2rem;
+    border-bottom: 3px solid black;
+    margin-bottom: 1rem;
+}
+#corpo h3
+{
+    font-size: 1.5rem;
+}
+.blocoWidthTelaFull
+{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
     text-align: center;
 }
-#cabecalho a
+.bloco
 {
-    color: white;
+    padding: 0 1rem 1rem 1rem;
+    width: 300px;
+    text-align: left;
 }
-.post
+.blocoPai
 {
-    padding: 10px;
-    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 1rem 1rem 1rem;
+}
+.width400px
+{
+    width: 400px;
 }
