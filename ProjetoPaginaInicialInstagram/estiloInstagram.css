@@ -3,170 +3,147 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    text-decoration: none;
-    box-sizing: border-box;
     font-size: 14px;
+    text-decoration: none;
 }
-
 body
 {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
 }
-
-.instagram-wrapper
+/**/
+#containerFULL
 {
+    width: 730px;
+    height: 650px;
+    margin: 48px auto;
+    padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 60%;
-    height: 100vh;
-}
-
-.instagram-phone
-{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    width: 50%;
-    height: 100vh;
 }
-
-.instagram-phone img
+.containerBloco
 {
-    height: 50rem;
-}
-
-.instagram-continue
-{
+    height: 100%;
+    width: 372px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 34rem;
 }
-
-.group
+#imgPhone
 {
+    height: 650px;
+}
+#logo
+{
+    height: 50px;
+}
+#imgPhoto
+{
+    height: 86px;
+    border-radius: 50%;
+}
+#containerLogin
+{
+    width: 348px;
+    height: 334px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
     background-color: white;
-    width: 20rem;
-    padding: 1.3rem 0;
-    border: 1px solid lightgrey;
+    border: 1px solid lightgray;
 }
-
-.group:nth-child(1)
+#containerTrocaUser
 {
-    min-height: 19rem;
-}
-
-.instagram-logo
-{
-    height: 3rem;
-}
-
-.profile-photo
-{
+    width: 348px;
+    height: 90px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    overflow: hidden; /*Esconde a parte da imagem que exceder o tamanho do container*/
+    justify-content: space-around;
+    background-color: white;
+    border: 1px solid lightgray;
 }
-
-.profile-photo img
+#containerTrocaUser p
 {
-    height: 6rem;
-}
-
-.instagram-login
-{
-    background-color: #0095f6;
-    color: white;
-    padding: 8px;
-    border-radius: 4px;
-}
-
-.instagram-logout
-{
-    color: #0095f6;
-    margin-top: 1rem;
-}
-
-.not-account
-{
+    text-align: center;
     color: rgb(160, 160, 160);
 }
 
-.link-blue
+#buttonContinuar
 {
-    color: #0095f6;
+    height: 30px;
+    padding: 8px;
+    background-color: #0095f6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-
-.get-the-app
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 1.3rem 0;
-}
-
-.download
+#containerBaixarAPP
 {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
+    height: 38px;
+}
+.links
+{
+    font-weight: bold;
+    color: #0095f6;
 }
 
-.app-download
+#containerObtenhaAPP
 {
-    height: 3rem;
-    width: 10rem;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icoDownload
+{
+    height: 38px;
+    width: 133px;
     background-size: cover;
 }
 
-.app-download:nth-child(1)
+.icoDownload:nth-child(1)
 {
     background-image: url('./img/apple-button.png');
 }
 
-.app-download:nth-child(2)
+.icoDownload:nth-child(2)
 {
     background-image: url('./img/googleplay-button.png');
 }
 
-@media (max-width: 1024px)
+@media (max-width: 875px)
 {
-    .instagram-wrapper
-    {
-        width: 90%;
-    }
-}
-
-@media (max-width: 650px)
-{
-    .instagram-wrapper
-    {
-        width: 90%;
-    }
-    .instagram-phone
+    .containerBloco:nth-child(1)
     {
         display: none;
     }
-    .instagram-continue
+}
+/*
+@media (max-width: 450px)
+{
+    .containerFULL
+    {
+        display: none;
+    }
+    #containerLogin
     {
         width: 100%;
+        margin: 0;
     }
 }
+*/
